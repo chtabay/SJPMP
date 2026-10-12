@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>SJPMP · Méthodes, processus, outils</title>
-  <meta name="description" content="Conseil en entreprise. Briques d’analyse des processus, des postes et des usages de l’IA, adossées à des références publiques.">
-  <meta property="og:title" content="SJPMP">
-  <meta property="og:description" content="Chaque processus a une version. Chaque usage de l’IA, une règle. Méthodes, processus et outils adossés à des références publiques.">
+  <title>SJPMP · Processus, méthodes, outils</title>
+  <meta name="description" content="Conseil en entreprise et socle PLM. Processus, rôles, postes, documents et outils gérés en configuration, avec des méthodes adossées à des références publiques.">
+  <meta property="og:title" content="SJPMP · Conseil en entreprise">
+  <meta property="og:description" content="Chaque processus, une version en vigueur. Chaque modification, une trace. Un socle PLM et des briques d’analyse adossées à des références publiques.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta name="theme-color" content="#F2F5F4" media="(prefers-color-scheme: light)">
@@ -14,7 +14,7 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -33,10 +33,10 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
         <ul>
+          <li><a href="#socle">Le socle</a></li>
+          <li><a href="#quotidien">Au quotidien</a></li>
           <li><a href="#domaines">Domaines</a></li>
           <li><a href="#briques">Briques</a></li>
-          <li><a href="#ia">IA</a></li>
-          <li><a href="#configuration">Configuration</a></li>
           <li><a href="#postes">Postes</a></li>
           <li><a class="btn btn-small" href="#contact">Nous écrire</a></li>
         </ul>
@@ -49,125 +49,228 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-head">
-          <p class="eyebrow">Conseil en entreprise · méthodes, processus, outils</p>
-          <h1 id="hero-title" class="hero-title">Chaque processus a une version. <span class="hero-mark">Chaque usage de l’IA, une règle.</span></h1>
+          <p class="eyebrow">Conseil en entreprise · processus, méthodes, outils</p>
+          <h1 id="hero-title" class="hero-title">Chaque processus, une version en vigueur. <span class="hero-mark">Chaque modification, une trace.</span></h1>
         </div>
         <div class="hero-lede">
-          <p>SJPMP fournit des briques d’analyse des processus. Chacune est une méthode, un processus ou un outil, et repose sur une référence publique. Elles servent à organiser l’entreprise, relire les postes, adopter de nouvelles pratiques numériques, gérer les processus en configuration et canaliser l’IA. Vous choisissez les briques. Vous gardez les livrables.</p>
+          <p>SJPMP applique à l’organisation de l’entreprise les méthodes de l’industrie qui gère ses produits en configuration. Processus, rôles, postes, documents et outils sont décrits dans un socle PLM, reliés entre eux et versionnés. Aucune modification n’entre en vigueur sans demande, évaluation et approbation. Les briques d’analyse reposent sur des références publiques.</p>
           <div class="hero-actions">
-            <a class="btn" href="#briques">Voir les briques</a>
+            <a class="btn" href="#socle">Voir le socle</a>
             <a class="btn btn-ghost" href="#contact">Nous écrire</a>
           </div>
         </div>
       </div>
 
-      <figure class="wrap flow">
-        <div class="flow-frame">
-          <canvas id="flow-canvas" role="img" aria-label="Schéma animé. Des usages de l’IA non recensés passent par le classement, puis suivent l’un des quatre couloirs&nbsp;: libre, encadré, supervisé, interdit. Les usages supervisés marquent une pause pour une décision humaine. Les usages interdits s’arrêtent à la barrière."></canvas>
+      <figure class="wrap impact">
+        <div class="impact-frame">
+          <canvas id="impact-canvas" role="img" aria-label="Schéma d’analyse d’impact&nbsp;: outils, processus, rôles et postes reliés entre eux."></canvas>
         </div>
-        <figcaption>À gauche, les usages de l’IA non recensés. Le classement donne à chacun un niveau et une règle. Les usages supervisés attendent une décision humaine. Les usages interdits s’arrêtent à la barrière.</figcaption>
+        <figcaption>
+          <span class="impact-legend"><i class="sw sw-mod"></i>Élément modifié</span>
+          <span class="impact-legend"><i class="sw sw-flag"></i>Élément lié, à revoir</span>
+          <span class="impact-text">Exemple animé. Une demande de modification touche un élément. Le socle suit les liens et signale ce qui doit être revu avant approbation.</span>
+        </figcaption>
       </figure>
     </section>
 
+    <!-- Le socle -->
+    <section id="socle" class="section band" aria-labelledby="socle-title">
+      <div class="wrap">
+        <div class="socle-intro">
+          <header class="section-head">
+            <p class="eyebrow">Le socle</p>
+            <h2 id="socle-title">Un PLM pour l’organisation de l’entreprise</h2>
+            <p>Dans l’aéronautique et l’industrie, un PLM (gestion du cycle de vie des produits) tient à jour la définition d’un produit tout au long de sa vie&nbsp;: articles, liens, versions, modifications. Le socle SJPMP applique ces mécanismes à l’entreprise elle-même.</p>
+            <p>Processus, rôles, postes, documents, outils et règles y deviennent des articles de configuration. Le socle est un produit à part entière. Il s’utilise seul ou avec les briques du catalogue.</p>
+          </header>
+
+          <div class="mechanisms-wrap">
+            <h3 class="mechanisms-title">Ce que fait le socle</h3>
+            <dl class="mechanisms">
+              <div><dt>Identifier</dt><dd>Chaque élément a un identifiant, une version et un propriétaire.</dd></div>
+              <div><dt>Relier</dt><dd>Un processus est relié à ses rôles, ses documents, ses outils et aux postes qui l’exécutent. L’analyse d’impact suit ces liens.</dd></div>
+              <div><dt>Maîtriser les modifications</dt><dd>Demande, évaluation, décision, mise en œuvre et vérification. Chaque étape est enregistrée.</dd></div>
+              <div><dt>Figer une référence</dt><dd>La configuration de référence est l’état approuvé d’un processus&nbsp;: logigramme, matrice RACI, points de contrôle, paramétrage des logiciels.</dd></div>
+              <div><dt>Auditer</dt><dd>L’historique dit qui a demandé quoi, qui a décidé, et quand. L’audit compare la pratique à la version en vigueur.</dd></div>
+            </dl>
+            <p class="refs"><span>Références publiques</span>ISO&nbsp;10007 · SAE EIA-649C · ITIL (<span lang="en">change enablement</span>)</p>
+          </div>
+        </div>
+
+        <figure class="sheet piece" id="piece-1">
+          <figcaption class="sheet-head">
+            <span class="sheet-title" id="piece-1-title">Fiche de configuration · PR-FIN-02</span>
+            <span class="tag">Pièce&nbsp;1 · Exemple</span>
+          </figcaption>
+          <dl class="config-fields">
+            <div><dt>Identifiant</dt><dd class="code">PR-FIN-02</dd></div>
+            <div><dt>Intitulé</dt><dd>Traitement des factures fournisseurs</dd></div>
+            <div><dt>Version en vigueur</dt><dd><strong>4.0</strong>, approuvée le 25/08/2026, applicable depuis le 01/09/2026</dd></div>
+            <div><dt>Propriétaire</dt><dd>Responsable comptable</dd></div>
+            <div class="wide"><dt>Autorité de décision</dt><dd>Directeur administratif et financier (DAF) pour les versions mineures · Comité des processus pour les versions majeures</dd></div>
+            <div class="wide">
+              <dt>Configuration de référence</dt>
+              <dd>
+                <ul class="baseline">
+                  <li>Logigramme BPMN <span class="code">PR-FIN-02-LOG</span>, v4.0</li>
+                  <li>Matrice RACI <span class="code">PR-FIN-02-RACI</span>, v3.1 (pièce&nbsp;2)</li>
+                  <li>Points de contrôle <span class="code">CTL-FIN-02</span>, v3.1</li>
+                  <li>Paramétrage de la plateforme de réception <span class="code">CFG-FAC</span>, v1.0</li>
+                </ul>
+              </dd>
+            </div>
+            <div><dt>Usages de l’IA rattachés</dt><dd>Aucun en vigueur · IA-011 en évaluation</dd></div>
+            <div><dt>Dernier audit</dt><dd>06/2026, sur la version&nbsp;3.1 · un écart, clos</dd></div>
+            <div class="wide"><dt>Prochain audit</dt><dd>12/2026, premier audit de la version&nbsp;4.0</dd></div>
+          </dl>
+          <p class="sheet-subhead" id="piece-1-hist">Historique des modifications (extrait)</p>
+          <table class="t-history" aria-labelledby="piece-1-hist">
+            <thead>
+              <tr>
+                <th scope="col">Version</th>
+                <th scope="col">Date</th>
+                <th scope="col">Modification</th>
+                <th scope="col">Demande</th>
+                <th scope="col">Décision</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code" data-label="Version">3.1</td>
+                <td class="num" data-label="Date">11/2025</td>
+                <td data-label="Modification">Seuil de double validation abaissé de 10&#8239;000&nbsp;€ à 5&#8239;000&nbsp;€</td>
+                <td data-label="Demande"><span class="code">DM-2025-019</span> · Contrôle de gestion</td>
+                <td data-label="Décision"><span class="status status-ok">Approuvée</span> DAF</td>
+              </tr>
+              <tr>
+                <td class="code" data-label="Version">4.0</td>
+                <td class="num" data-label="Date">08/2026</td>
+                <td data-label="Modification">Réception des factures électroniques sur une plateforme agréée, saisie manuelle limitée aux anomalies et aux factures encore reçues sur papier</td>
+                <td data-label="Demande"><span class="code">DM-2026-011</span> · Responsable comptable</td>
+                <td data-label="Décision"><span class="status status-ok">Approuvée</span> Comité des processus</td>
+              </tr>
+              <tr>
+                <td class="code" data-label="Version">Aucune</td>
+                <td class="num" data-label="Date">09/2026</td>
+                <td data-label="Modification">Suppression du contrôle des doublons de paiement</td>
+                <td data-label="Demande"><span class="code">DM-2026-024</span> · Responsable comptable</td>
+                <td data-label="Décision"><span class="status status-no">Refusée</span> Comité des processus, après AMDEC, motif&nbsp;: risque non couvert</td>
+              </tr>
+              <tr>
+                <td class="code" data-label="Version">À attribuer</td>
+                <td class="num" data-label="Date">10/2026</td>
+                <td data-label="Modification">Extraction par IA des données des factures papier, usage IA-011, niveau Encadré</td>
+                <td data-label="Demande"><span class="code">DM-2026-031</span> · Responsable comptable</td>
+                <td data-label="Décision"><span class="status status-wait">En évaluation</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="sheet-foot">Version majeure&nbsp;: le déroulé du processus change. Version mineure&nbsp;: un réglage à déroulé constant. Le numéro de version s’attribue à l’approbation.</p>
+        </figure>
+
+        <div class="config-row">
+          <figure class="sheet piece" id="piece-2">
+            <figcaption class="sheet-head">
+              <span class="sheet-title" id="piece-2-title">Matrice RACI · PR-FIN-02-RACI, v3.1</span>
+              <span class="tag">Pièce&nbsp;2 · Exemple</span>
+            </figcaption>
+            <div class="table-scroll" tabindex="0" role="region" aria-labelledby="piece-2-title">
+              <table class="t-raci" aria-labelledby="piece-2-title">
+                <thead>
+                  <tr>
+                    <th scope="col">Activité</th>
+                    <th scope="col">Comptable fournisseurs</th>
+                    <th scope="col">Responsable comptable</th>
+                    <th scope="col">Acheteur</th>
+                    <th scope="col">DAF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Réception et contrôle de la facture</th><td>R</td><td class="raci-a">A</td><td></td><td></td></tr>
+                  <tr><th scope="row">Rapprochement commande, réception, facture</th><td>R</td><td class="raci-a">A</td><td>C</td><td></td></tr>
+                  <tr><th scope="row">Traitement des anomalies</th><td>R</td><td class="raci-a">A</td><td>C</td><td>I</td></tr>
+                  <tr><th scope="row">Validation au-delà de 5&#8239;000&nbsp;€</th><td>I</td><td>R</td><td>C</td><td class="raci-a">A</td></tr>
+                  <tr><th scope="row">Mise en paiement</th><td>I</td><td>R</td><td></td><td class="raci-a">A</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="sheet-foot">R réalise · A approuve · C est consulté · I est informé. Une seule lettre A par ligne.</p>
+          </figure>
+
+          <div class="gains">
+            <h3>Ce que cela apporte</h3>
+            <ul class="checklist">
+              <li>Une seule version en vigueur par processus, connue de ceux qui l’appliquent.</li>
+              <li>Avant d’approuver une modification, la liste des éléments qu’elle touche.</li>
+              <li>Après un incident, l’historique donne la configuration en vigueur à la date des faits.</li>
+              <li>Un nouvel outil, un nouveau poste ou un nouvel usage de l’IA passe par une demande de modification, comme le reste.</li>
+              <li>Le processus est décrit par écrit, pas seulement dans la mémoire d’une personne.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Au quotidien -->
+    <section id="quotidien" class="section" aria-labelledby="quotidien-title">
+      <div class="wrap quotidien-grid">
+        <header class="section-head">
+          <p class="eyebrow">Au quotidien</p>
+          <h2 id="quotidien-title">Le socle se consulte depuis Claude</h2>
+          <p>Des connecteurs MCP (Model Context Protocol) relient Claude au socle. Les équipes y posent leurs questions, y préparent leurs demandes de modification et y affichent des vues métier&nbsp;: leur poste, leurs processus, les modifications en cours.</p>
+          <p>Claude passe par le même circuit que tout le monde. Il prépare la demande. Les personnes désignées décident.</p>
+          <p class="refs"><span>Référence publique</span>Model Context Protocol, spécification ouverte (modelcontextprotocol.io)</p>
+        </header>
+
+        <figure class="sheet piece" id="piece-3">
+          <figcaption class="sheet-head">
+            <span class="sheet-title" id="piece-3-title">Demandes à Claude · comptabilité fournisseurs</span>
+            <span class="tag">Pièce&nbsp;3 · Exemple</span>
+          </figcaption>
+          <table class="t-requests" aria-labelledby="piece-3-title">
+            <thead>
+              <tr>
+                <th scope="col">Demande</th>
+                <th scope="col">Dans le socle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">«&nbsp;Qui valide une facture fournisseur de 7&#8239;000&nbsp;€&#8239;?&nbsp;»</th>
+                <td data-label="Dans le socle">Lecture de la matrice <span class="code">PR-FIN-02-RACI</span>, v3.1. Au-delà de 5&#8239;000&nbsp;€, le DAF approuve.</td>
+              </tr>
+              <tr>
+                <th scope="row">«&nbsp;Ajoute une double validation pour les nouveaux fournisseurs.&nbsp;»</th>
+                <td data-label="Dans le socle">Demande <span class="code">DM-2026-044</span> préparée sur <span class="code">PR-ACH-01</span>, avec la liste des éléments liés à revoir. Décision&nbsp;: Comité des processus, version majeure.</td>
+              </tr>
+              <tr>
+                <th scope="row">«&nbsp;Que touche le remplacement de l’ERP&#8239;?&nbsp;»</th>
+                <td data-label="Dans le socle">Vue d’impact&nbsp;: 3&nbsp;processus, 3&nbsp;rôles, 3&nbsp;postes. Aucune modification enregistrée.</td>
+              </tr>
+              <tr>
+                <th scope="row">«&nbsp;Qu’est-ce qui a changé sur mon poste depuis juillet&#8239;?&nbsp;»</th>
+                <td data-label="Dans le socle">Vue métier du poste Comptable fournisseurs&nbsp;: <span class="code">PR-FIN-02</span> en version&nbsp;4.0 depuis le 01/09/2026, saisie des factures automatisée, contrôles avant paiement renforcés.</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </div>
+    </section>
+
     <!-- Domaines -->
-    <section id="domaines" class="section" aria-labelledby="domaines-title">
+    <section id="domaines" class="section band" aria-labelledby="domaines-title">
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow">Domaines</p>
-          <h2 id="domaines-title">Cinq domaines, les mêmes briques</h2>
-          <p>Chaque domaine assemble des briques du catalogue. On dessine un processus une fois. Le même schéma sert ensuite à placer un contrôle, à analyser un poste et à classer un usage de l’IA.</p>
+          <h2 id="domaines-title">Cinq domaines, un même catalogue</h2>
+          <p>Les domaines puisent dans le même catalogue de briques. On dessine un processus une fois. Le même schéma sert ensuite à placer un contrôle, à analyser un poste ou à évaluer un outil.</p>
         </header>
 
         <div class="services">
-          <article class="service s-conseil">
-            <p class="service-label">Conseil en entreprise</p>
-            <h3>Rôles, décisions, responsabilités</h3>
-            <p>La cartographie décrit l’organisation telle qu’elle fonctionne&nbsp;: processus principaux, rôles, circuits de décision. Le relevé d’écarts la compare à l’organigramme. Vous arbitrez sur pièces.</p>
-            <div class="service-foot">
-              <div class="deliverables">
-                <p class="deliverables-title">Livrables</p>
-                <ul>
-                  <li>Cartographie des processus principaux en BPMN</li>
-                  <li>Diagramme SIPOC par processus</li>
-                  <li>Matrice RACI des activités clés</li>
-                  <li>Relevé des écarts, classés par criticité</li>
-                </ul>
-              </div>
-              <p class="refs"><span>Références publiques</span>ISO&nbsp;9001 (approche processus) · BPMN&nbsp;2.0, ISO/IEC&nbsp;19510 · SIPOC · RACI</p>
-              <div class="card-links"><a class="link-more" href="#piece-3">Voir une matrice RACI</a></div>
-            </div>
-          </article>
-
-          <article class="service service-feature s-ia">
-            <p class="service-label">Domaine central</p>
-            <h3>Canaliser le recours à l’IA</h3>
-            <p>L’IA se traite comme un processus. L’inventaire recense ses usages. Le classement donne à chacun un niveau de risque et une règle. La charte et le registre se gèrent en configuration.</p>
-            <ul class="lanes-legend" aria-label="Les quatre niveaux d’usage">
-              <li><i class="dot dot-libre"></i>Libre</li>
-              <li><i class="dot dot-encadre"></i>Encadré</li>
-              <li><i class="dot dot-supervise"></i>Supervisé</li>
-              <li><i class="dot dot-proscrit"></i>Interdit</li>
-            </ul>
-            <div class="service-foot">
-              <div class="deliverables">
-                <p class="deliverables-title">Livrables</p>
-                <ul>
-                  <li>Inventaire des usages, déclarés ou non</li>
-                  <li>Classement de chaque usage, en cohérence avec le règlement (UE)&nbsp;2024/1689</li>
-                  <li>Charte d’usage versionnée et liste des outils autorisés</li>
-                  <li>Registre des usages, revu à date fixe</li>
-                </ul>
-              </div>
-              <p class="refs"><span>Références publiques</span>Règlement (UE)&nbsp;2024/1689 · RGPD (UE)&nbsp;2016/679 · ISO/IEC&nbsp;42001 · ISO/IEC&nbsp;23894</p>
-              <div class="card-links">
-                <a class="link-more" href="#ia">Voir les quatre niveaux</a>
-                <a class="link-more" href="#piece-1">Voir un registre</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="service s-numerique">
-            <p class="service-label">Nouvelles pratiques numériques</p>
-            <h3>Chaque outil modifie un processus</h3>
-            <p>Facturation électronique, signature électronique, automatisations, outils collaboratifs. Pour chaque outil retenu, la modélisation montre le processus avant et après, ses données et ses contrôles. La bascule passe par une demande de modification.</p>
-            <div class="service-foot">
-              <div class="deliverables">
-                <p class="deliverables-title">Livrables</p>
-                <ul>
-                  <li>Inventaire des outils et des flux de données</li>
-                  <li>Processus avant et après, modélisés en BPMN</li>
-                  <li>AMDEC du processus cible</li>
-                  <li>Plan de bascule, avec retour arrière prévu</li>
-                </ul>
-              </div>
-              <p class="refs"><span>Références publiques</span>BPMN&nbsp;2.0, ISO/IEC&nbsp;19510 · AMDEC, IEC&nbsp;60812 · ISO&nbsp;22468 (chaîne de valeur) · RGPD (UE)&nbsp;2016/679</p>
-              <div class="card-links"><a class="link-more" href="#briques">Voir le catalogue</a></div>
-            </div>
-          </article>
-
-          <article class="service s-postes">
-            <p class="service-label">Analyse des postes</p>
-            <h3>Ce que la technologie change, tâche par tâche</h3>
-            <p>La grille découpe chaque poste en tâches. Pour chacune, elle indique ce que le numérique et l’IA automatisent, assistent ou laissent en l’état. Fiches de poste et besoins de compétences en découlent.</p>
-            <div class="service-foot">
-              <div class="deliverables">
-                <p class="deliverables-title">Livrables</p>
-                <ul>
-                  <li>Grille d’analyse par poste</li>
-                  <li>Fiches de poste mises à jour, rattachées au ROME</li>
-                  <li>Écarts de compétences, poste par poste</li>
-                  <li>Base du dossier de consultation du CSE, le cas échéant</li>
-                </ul>
-              </div>
-              <p class="refs"><span>Références publiques</span>ROME (France Travail) · ESCO (Commission européenne) · DigComp · Code du travail, art.&nbsp;L2312-8</p>
-              <div class="card-links"><a class="link-more" href="#piece-4">Voir une grille</a></div>
-            </div>
-          </article>
-
-          <article class="service s-process">
-            <p class="service-label">Contrôle des processus</p>
+          <article class="service service-feature s-process">
+            <p class="service-label">Contrôle des processus en configuration</p>
             <h3>Processus gérés en configuration</h3>
-            <p>Chaque processus reçoit un identifiant, une version et une configuration de référence. Toute modification passe par une demande, une évaluation et une approbation écrites. L’audit compare la pratique à la version en vigueur.</p>
+            <p>Un processus géré en configuration a un identifiant, une version et une configuration de référence, tenus dans le socle. Toute modification passe par une demande, une évaluation et une approbation écrites. L’audit compare la pratique à la version en vigueur.</p>
             <div class="service-foot">
               <div class="deliverables">
                 <p class="deliverables-title">Livrables</p>
@@ -178,8 +281,87 @@
                   <li>Rapport d’audit de configuration</li>
                 </ul>
               </div>
-              <p class="refs"><span>Références publiques</span>ISO&nbsp;10007 · SAE EIA-649C · ITIL, gestion des changements · COSO, contrôle interne</p>
-              <div class="card-links"><a class="link-more" href="#piece-2">Voir une fiche de configuration</a></div>
+              <p class="refs"><span>Références publiques</span>ISO&nbsp;10007 · SAE EIA-649C · ITIL (<span lang="en">change enablement</span>)</p>
+              <div class="card-links">
+                <a class="link-more" href="#socle">Voir le socle</a>
+                <a class="link-more" href="#piece-1">Voir une fiche de configuration</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service s-conseil">
+            <p class="service-label">Conseil en entreprise</p>
+            <h3>Rôles, décisions, responsabilités</h3>
+            <p>La cartographie décrit l’organisation telle qu’elle fonctionne&nbsp;: processus principaux, rôles, circuits de décision. Le relevé d’écarts la compare à l’organigramme. Vous arbitrez sur pièces.</p>
+            <div class="service-foot">
+              <div class="deliverables">
+                <p class="deliverables-title">Livrables</p>
+                <ul>
+                  <li>Cartographie des processus principaux en BPMN, la notation normalisée</li>
+                  <li>Diagramme SIPOC par processus</li>
+                  <li>Matrice RACI des activités clés</li>
+                  <li>Relevé des écarts, classés par criticité</li>
+                </ul>
+              </div>
+              <p class="refs"><span>Références publiques</span>ISO&nbsp;9001 (approche processus) · BPMN&nbsp;2.0, ISO/IEC&nbsp;19510 · SIPOC · RACI</p>
+              <div class="card-links"><a class="link-more" href="#piece-2">Voir une matrice RACI</a></div>
+            </div>
+          </article>
+
+          <article class="service s-numerique">
+            <p class="service-label">Nouvelles pratiques numériques</p>
+            <h3>Le processus avant et après l’outil</h3>
+            <p>Facturation électronique, signature électronique, automatisations, outils collaboratifs. Pour chaque outil retenu, la modélisation montre le processus avant et après, ses données et ses contrôles. La bascule passe par une demande de modification.</p>
+            <div class="service-foot">
+              <div class="deliverables">
+                <p class="deliverables-title">Livrables</p>
+                <ul>
+                  <li>Inventaire des outils et des flux de données</li>
+                  <li>Processus avant et après, modélisés en BPMN</li>
+                  <li>AMDEC du processus cible&nbsp;: défaillances possibles, effets, criticité</li>
+                  <li>Plan de bascule, avec retour arrière prévu</li>
+                </ul>
+              </div>
+              <p class="refs"><span>Références publiques</span>BPMN&nbsp;2.0, ISO/IEC&nbsp;19510 · AMDEC, IEC&nbsp;60812 · ISO&nbsp;22468, <span lang="en">value stream management</span> · RGPD (UE)&nbsp;2016/679</p>
+              <div class="card-links"><a class="link-more" href="#piece-1">Voir un exemple&nbsp;: la facture électronique</a></div>
+            </div>
+          </article>
+
+          <article class="service s-postes">
+            <p class="service-label">Analyse des postes</p>
+            <h3>Ce que la technologie change, tâche par tâche</h3>
+            <p>La grille découpe chaque poste en tâches. Pour chacune, elle indique si la tâche devient automatisée, assistée ou renforcée, ou si elle reste inchangée. Fiches de poste et besoins de compétences en découlent.</p>
+            <div class="service-foot">
+              <div class="deliverables">
+                <p class="deliverables-title">Livrables</p>
+                <ul>
+                  <li>Grille d’analyse par poste</li>
+                  <li>Fiches de poste mises à jour, rattachées au ROME, le répertoire des métiers de France Travail</li>
+                  <li>Écarts de compétences, poste par poste</li>
+                  <li>Base du dossier de consultation du CSE, le cas échéant</li>
+                </ul>
+              </div>
+              <p class="refs"><span>Références publiques</span>ROME (France Travail) · ESCO (Commission européenne) · DigComp, compétences numériques · Code du travail, art.&nbsp;L2312-8</p>
+              <div class="card-links"><a class="link-more" href="#piece-4">Voir une grille</a></div>
+            </div>
+          </article>
+
+          <article class="service s-ia">
+            <p class="service-label">Recours à l’IA</p>
+            <h3>Une règle par usage</h3>
+            <p>L’inventaire recense les usages de l’IA, déclarés ou non. Le classement donne à chacun un niveau de risque et une règle&nbsp;: libre, encadré, supervisé ou interdit. Charte et registre se gèrent en configuration, comme le reste.</p>
+            <div class="service-foot">
+              <div class="deliverables">
+                <p class="deliverables-title">Livrables</p>
+                <ul>
+                  <li>Inventaire des usages, déclarés ou non</li>
+                  <li>Classement en quatre niveaux, construit sur les catégories du règlement européen sur l’IA</li>
+                  <li>Charte d’usage versionnée et liste des outils autorisés</li>
+                  <li>Registre des usages, revu à date fixe</li>
+                </ul>
+              </div>
+              <p class="refs"><span>Références publiques</span>Règlement européen sur l’IA, (UE)&nbsp;2024/1689 · RGPD (UE)&nbsp;2016/679 · ISO/IEC&nbsp;42001 · ISO/IEC&nbsp;23894</p>
+              <div class="card-links"><a class="link-more" href="#briques">Voir le catalogue</a></div>
             </div>
           </article>
         </div>
@@ -187,12 +369,12 @@
     </section>
 
     <!-- Catalogue des briques -->
-    <section id="briques" class="section band" aria-labelledby="briques-title">
+    <section id="briques" class="section" aria-labelledby="briques-title">
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow">Catalogue</p>
           <h2 id="briques-title">Des briques, à prendre à l’unité</h2>
-          <p>Une brique est une méthode, un processus ou un outil. Chacune s’appuie sur une référence publique&nbsp;: norme, règlement ou notation usuelle. Toutes se vérifient sans nous. Les livrables restent chez vous, dans des formats que vos outils ouvrent.</p>
+          <p>Une brique est une méthode, un processus ou un outil. Chacune s’appuie sur une référence publique&nbsp;: norme, règlement, référentiel ou notation usuelle. Toutes se vérifient sans nous. Elles s’utilisent seules ou dans le socle.</p>
         </header>
 
         <div class="catalog" data-catalog>
@@ -209,7 +391,7 @@
               <button type="button" class="filter-btn" data-filter="processus" aria-pressed="false">Processus</button>
               <button type="button" class="filter-btn" data-filter="outil" aria-pressed="false">Outils</button>
             </div>
-            <p class="catalog-count" data-catalog-count aria-live="polite">14 briques</p>
+            <p class="catalog-count" data-catalog-count aria-live="polite">13&nbsp;briques</p>
           </div>
 
           <div class="sheet">
@@ -239,7 +421,7 @@
                 <tr data-type="methode">
                   <th scope="row">Cartographie de la chaîne de valeur</th>
                   <td><span class="chip chip-methode">Méthode</span></td>
-                  <td class="ref" data-label="Référence publique">ISO&nbsp;22468 (value stream management)</td>
+                  <td class="ref" data-label="Référence publique">ISO&nbsp;22468, <span lang="en">value stream management</span></td>
                   <td data-label="Ce que vous obtenez">Les délais, attentes et ressaisies d’un flux, mesurés de bout en bout.</td>
                 </tr>
                 <tr data-type="methode">
@@ -249,10 +431,16 @@
                   <td data-label="Ce que vous obtenez">Les défaillances possibles d’un processus, cotées par criticité, chacune avec sa parade.</td>
                 </tr>
                 <tr data-type="methode">
+                  <th scope="row">Analyse d’impact</th>
+                  <td><span class="chip chip-methode">Méthode</span></td>
+                  <td class="ref" data-label="Référence publique">ISO&nbsp;10007, évaluation des modifications</td>
+                  <td data-label="Ce que vous obtenez">Avant décision, la liste des éléments touchés par une modification&nbsp;: processus, rôles, postes, documents, outils.</td>
+                </tr>
+                <tr data-type="methode">
                   <th scope="row">Classement des usages de l’IA</th>
                   <td><span class="chip chip-methode">Méthode</span></td>
                   <td class="ref" data-label="Référence publique">Règlement (UE)&nbsp;2024/1689, art.&nbsp;5, 6 et 50, annexe&nbsp;III&#8239;; ISO/IEC&nbsp;23894</td>
-                  <td data-label="Ce que vous obtenez">Chaque usage rattaché à l’un des quatre niveaux, avec sa justification.</td>
+                  <td data-label="Ce que vous obtenez">Chaque usage rattaché à l’un des quatre niveaux (libre, encadré, supervisé, interdit), construits sur les catégories du règlement et ajustés par votre charte.</td>
                 </tr>
                 <tr data-type="processus">
                   <th scope="row">Identification de la configuration</th>
@@ -263,20 +451,14 @@
                 <tr data-type="processus">
                   <th scope="row">Maîtrise des modifications</th>
                   <td><span class="chip chip-processus">Processus</span></td>
-                  <td class="ref" data-label="Référence publique">ISO&nbsp;10007&#8239;; SAE EIA-649C&#8239;; ITIL, gestion des changements</td>
-                  <td data-label="Ce que vous obtenez">Un circuit unique&nbsp;: demande, évaluation, décision, mise en œuvre, enregistrement.</td>
+                  <td class="ref" data-label="Référence publique">ISO&nbsp;10007&#8239;; SAE EIA-649C&#8239;; ITIL (<span lang="en">change enablement</span>)</td>
+                  <td data-label="Ce que vous obtenez">Un circuit unique&nbsp;: demande, évaluation, décision, mise en œuvre et vérification, enregistrement.</td>
                 </tr>
                 <tr data-type="processus">
                   <th scope="row">Audit de configuration</th>
                   <td><span class="chip chip-processus">Processus</span></td>
                   <td class="ref" data-label="Référence publique">ISO&nbsp;10007&#8239;; SAE EIA-649C</td>
                   <td data-label="Ce que vous obtenez">Un constat daté des écarts entre la pratique et la version en vigueur.</td>
-                </tr>
-                <tr data-type="processus">
-                  <th scope="row">Revue périodique des usages de l’IA</th>
-                  <td><span class="chip chip-processus">Processus</span></td>
-                  <td class="ref" data-label="Référence publique">ISO/IEC&nbsp;42001</td>
-                  <td data-label="Ce que vous obtenez">Une revue datée&nbsp;: usages ajoutés, reclassés, retirés.</td>
                 </tr>
                 <tr data-type="outil">
                   <th scope="row">Matrice RACI</th>
@@ -297,360 +479,92 @@
                   <td data-label="Ce que vous obtenez">Les tâches du poste et l’effet du numérique et de l’IA sur chacune.</td>
                 </tr>
                 <tr data-type="outil">
-                  <th scope="row">Charte d’usage de l’IA</th>
-                  <td><span class="chip chip-outil">Outil</span></td>
-                  <td class="ref" data-label="Référence publique">ISO/IEC&nbsp;42001, politique IA</td>
-                  <td data-label="Ce que vous obtenez">Un document versionné&nbsp;: outils autorisés, données admises, règle par niveau.</td>
-                </tr>
-                <tr data-type="outil">
                   <th scope="row">Registre des usages de l’IA</th>
                   <td><span class="chip chip-outil">Outil</span></td>
-                  <td class="ref" data-label="Référence publique">ISO/IEC&nbsp;42001&#8239;; RGPD, art.&nbsp;30 (registre des traitements)</td>
+                  <td class="ref" data-label="Référence publique">ISO/IEC&nbsp;42001&#8239;; RGPD, art.&nbsp;30 (registre des activités de traitement)</td>
                   <td data-label="Ce que vous obtenez">Une ligne par usage&nbsp;: données, niveau, responsable, prochaine revue.</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <p class="catalog-note"><span>Où vérifier</span>Normes ISO, IEC et EN&nbsp;: ISO, IEC, AFNOR. SAE EIA-649C&nbsp;: SAE International. BPMN&nbsp;: OMG. Règlements européens&nbsp;: EUR-Lex. Code du travail&nbsp;: Légifrance. ROME&nbsp;: France Travail. ESCO et DigComp&nbsp;: Commission européenne. Les normes sont citées sans année. L’édition applicable est celle en vigueur à la date de l’intervention.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recours à l'IA -->
-    <section id="ia" class="section" aria-labelledby="ia-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Recours à l’IA</p>
-          <h2 id="ia-title">Quatre niveaux, une règle écrite pour chacun</h2>
-          <p>L’IA se gère avec les briques des processus&nbsp;: inventaire, classement, règles d’usage, registre, contrôle. L’inventaire recense chaque usage, déclaré ou non. Le classement le rattache à l’un des quatre niveaux, selon le risque pour vos données, vos clients et vos décisions. Les niveaux suivent l’approche par les risques du règlement (UE)&nbsp;2024/1689 et y ajoutent vos propres interdits. Ce sont les quatre couloirs du schéma d’ouverture.</p>
-        </header>
-
-        <ol class="levels">
-          <li class="level level-libre">
-            <div class="level-top">
-              <span class="level-tag"><i class="dot dot-libre"></i>Libre</span>
-              <span class="gauge" role="img" aria-label="Risque 1 sur 4"><i class="on"></i><i></i><i></i><i></i></span>
-            </div>
-            <h3>Usage libre</h3>
-            <dl class="level-facts">
-              <div><dt>Règle</dt><dd>Outil autorisé. Données publiques ou internes non sensibles. Aucune validation préalable. L’usage figure au registre.</dd></div>
-              <div><dt>Exemple</dt><dd>Résumer un document public. Reformuler une note interne.</dd></div>
-              <div class="level-law"><dt>Règlement (UE)&nbsp;2024/1689</dt><dd>Risque dit minimal.</dd></div>
-            </dl>
-          </li>
-          <li class="level level-encadre">
-            <div class="level-top">
-              <span class="level-tag"><i class="dot dot-encadre"></i>Encadré</span>
-              <span class="gauge" role="img" aria-label="Risque 2 sur 4"><i class="on"></i><i class="on"></i><i></i><i></i></span>
-            </div>
-            <h3>Usage encadré</h3>
-            <dl class="level-facts">
-              <div><dt>Règle</dt><dd>Outil autorisé, sous contrat de sous-traitance (RGPD, art.&nbsp;28). Données limitées à la liste prévue. Relecture humaine avant toute diffusion.</dd></div>
-              <div><dt>Exemple</dt><dd>Préparer une réponse à un client. Rédiger le brouillon d’une proposition commerciale.</dd></div>
-              <div class="level-law"><dt>Règlement (UE)&nbsp;2024/1689</dt><dd>Obligations de transparence (art.&nbsp;50) dans les cas qu’il vise, par exemple un hypertrucage diffusé.</dd></div>
-            </dl>
-          </li>
-          <li class="level level-supervise">
-            <div class="level-top">
-              <span class="level-tag"><i class="dot dot-supervise"></i>Supervisé</span>
-              <span class="gauge" role="img" aria-label="Risque 3 sur 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
-            </div>
-            <h3>Décision humaine obligatoire</h3>
-            <dl class="level-facts">
-              <div><dt>Règle</dt><dd>Outil prévu pour cet usage par son fournisseur. L’IA propose. Une personne désignée décide et consigne sa décision.</dd></div>
-              <div><dt>Exemple</dt><dd>Trier des candidatures. Évaluer la solvabilité d’un client particulier.</dd></div>
-              <div class="level-law"><dt>Règlement (UE)&nbsp;2024/1689</dt><dd>Inclut les systèmes à haut risque (art.&nbsp;6 et annexe&nbsp;III). Contrôle humain (art.&nbsp;14) et obligations du déployeur (art.&nbsp;26). Un outil généraliste employé à cette fin fait de l’entreprise le fournisseur d’un système à haut risque (art.&nbsp;25). Voir aussi RGPD, art.&nbsp;22.</dd></div>
-            </dl>
-          </li>
-          <li class="level level-proscrit">
-            <div class="level-top">
-              <span class="level-tag"><i class="dot dot-proscrit"></i>Interdit</span>
-              <span class="gauge" role="img" aria-label="Risque 4 sur 4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
-            </div>
-            <h3>Usage interdit</h3>
-            <dl class="level-facts">
-              <div><dt>Règle</dt><dd>Outil bloqué ou usage exclu par écrit. Pas de dérogation locale.</dd></div>
-              <div><dt>Exemple</dt><dd>Inférer les émotions d’un salarié au travail, à partir de sa voix ou de son visage. Coller un dossier client dans un outil grand public.</dd></div>
-              <div class="level-law"><dt>Règlement (UE)&nbsp;2024/1689</dt><dd>Pratiques interdites (art.&nbsp;5) pour le premier exemple. Votre charte pour le second.</dd></div>
-            </dl>
-          </li>
-        </ol>
-        <p class="levels-note">Les quatre niveaux servent de point de départ. Votre charte fixe les siens.</p>
-
-        <figure class="sheet piece" id="piece-1">
-          <figcaption class="sheet-head">
-            <span class="sheet-title">Registre des usages de l’IA</span>
-            <span class="tag">Pièce 1 · Exemple</span>
-          </figcaption>
-          <table class="t-registre">
-            <thead>
-              <tr>
-                <th scope="col">Réf.</th>
-                <th scope="col">Usage</th>
-                <th scope="col">Données</th>
-                <th scope="col">Niveau</th>
-                <th scope="col">Responsable</th>
-                <th scope="col">Prochaine revue</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="code">IA-002</td>
-                <th scope="row">Résumé des comptes rendus de réunion</th>
-                <td data-label="Données">Internes, non sensibles</td>
-                <td data-label="Niveau"><span class="lvl"><i class="dot dot-libre"></i>Libre</span></td>
-                <td data-label="Responsable">Secrétariat général</td>
-                <td class="num" data-label="Prochaine revue">03/2027</td>
-              </tr>
-              <tr>
-                <td class="code">IA-005</td>
-                <th scope="row">Brouillons de réponses aux clients</th>
-                <td data-label="Données">Clients, limitées à la liste prévue</td>
-                <td data-label="Niveau"><span class="lvl"><i class="dot dot-encadre"></i>Encadré</span></td>
-                <td data-label="Responsable">Responsable relation client</td>
-                <td class="num" data-label="Prochaine revue">01/2027</td>
-              </tr>
-              <tr>
-                <td class="code">IA-007</td>
-                <th scope="row">Présélection des candidatures dans le logiciel de recrutement</th>
-                <td data-label="Données">Candidats</td>
-                <td data-label="Niveau"><span class="lvl"><i class="dot dot-supervise"></i>Supervisé</span></td>
-                <td data-label="Responsable">DRH</td>
-                <td class="num" data-label="Prochaine revue">12/2026</td>
-              </tr>
-              <tr>
-                <td class="code">IA-009</td>
-                <th scope="row">Détection des émotions dans les appels, option du logiciel de téléphonie</th>
-                <td data-label="Données">Voix des salariés</td>
-                <td data-label="Niveau"><span class="lvl"><i class="dot dot-proscrit"></i>Interdit</span><span class="lvl-note">option désactivée</span></td>
-                <td data-label="Responsable">DSI</td>
-                <td class="num" data-label="Prochaine revue">12/2026</td>
-              </tr>
-              <tr>
-                <td class="code">IA-011</td>
-                <th scope="row">Extraction des données des factures papier restantes</th>
-                <td data-label="Données">Factures fournisseurs</td>
-                <td data-label="Niveau"><span class="lvl"><i class="dot dot-encadre"></i>Encadré</span><span class="lvl-note">en évaluation, DM-2026-031</span></td>
-                <td data-label="Responsable">Responsable comptable</td>
-                <td class="num" data-label="Prochaine revue">À l’approbation</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="sheet-foot">Une ligne par usage. Un usage sans ligne n’est pas autorisé.</p>
-        </figure>
-
-        <div class="ia-setup">
-          <h3>Ce que vous obtenez</h3>
-          <ul class="checklist">
-            <li>Inventaire des usages, y compris ceux que personne n’a déclarés</li>
-            <li>Classement de chaque usage dans l’un des quatre niveaux, avec sa justification</li>
-            <li>Charte d’usage versionnée&nbsp;: outils autorisés, données admises, relecture exigée</li>
-            <li>Registre des usages, un responsable par ligne, articulé avec le registre RGPD (art.&nbsp;30)</li>
-            <li>Circuit d’autorisation&nbsp;: tout nouvel usage passe par une demande de modification</li>
-            <li>Revue du registre et audit des usages à date fixe</li>
-            <li>Fiche d’une page par niveau, remise aux utilisateurs (mesure de maîtrise de l’IA, art.&nbsp;4)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Processus gérés en configuration -->
-    <section id="configuration" class="section band" aria-labelledby="configuration-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">Processus gérés en configuration</p>
-          <h2 id="configuration-title">Une version en vigueur, et une seule</h2>
-          <p>La gestion de configuration vient de l’aéronautique et de l’industrie. ISO&nbsp;10007 la décrit en cinq activités&nbsp;: planification, identification, maîtrise des modifications, enregistrement de l’état de la configuration, audit. Appliquée à un processus, elle lui donne un identifiant, une version, un propriétaire et une configuration de référence. Aucune modification n’entre en vigueur sans demande, évaluation et approbation. Le processus pratiqué correspond au processus décrit, ou l’écart est connu.</p>
-        </header>
-
-        <figure class="sheet piece" id="piece-2">
-          <figcaption class="sheet-head">
-            <span class="sheet-title">Fiche de configuration · PR-FIN-02</span>
-            <span class="tag">Pièce 2 · Exemple</span>
-          </figcaption>
-          <dl class="config-fields">
-            <div><dt>Identifiant</dt><dd class="code">PR-FIN-02</dd></div>
-            <div><dt>Intitulé</dt><dd>Traitement des factures fournisseurs</dd></div>
-            <div><dt>Version en vigueur</dt><dd><strong>4.0</strong>, approuvée le 25/08/2026, en vigueur depuis le 01/09/2026</dd></div>
-            <div><dt>Propriétaire</dt><dd>Responsable comptable</dd></div>
-            <div class="wide"><dt>Autorité de décision</dt><dd>Directeur administratif et financier (DAF) pour les versions mineures · Comité des processus pour les versions majeures</dd></div>
-            <div class="wide">
-              <dt>Configuration de référence</dt>
-              <dd>
-                <ul class="baseline">
-                  <li>Logigramme BPMN <span class="code">PR-FIN-02-LOG</span>, v4.0</li>
-                  <li>Matrice RACI <span class="code">PR-FIN-02-RACI</span>, v3.1 (pièce&nbsp;3)</li>
-                  <li>Points de contrôle <span class="code">CTL-FIN-02</span>, v3.1</li>
-                  <li>Paramétrage de la plateforme de réception <span class="code">CFG-FAC</span>, v1.0</li>
-                </ul>
-              </dd>
-            </div>
-            <div><dt>Usages de l’IA rattachés</dt><dd>Aucun en vigueur · IA-011 en évaluation (pièce&nbsp;1)</dd></div>
-            <div><dt>Dernier audit</dt><dd>06/2026, sur la version 3.1 · un écart, clos</dd></div>
-            <div class="wide"><dt>Prochain audit</dt><dd>12/2026, premier audit de la version 4.0</dd></div>
-          </dl>
-          <p class="sheet-subhead">Historique des modifications (extrait)</p>
-          <table class="t-history">
-            <thead>
-              <tr>
-                <th scope="col">Version</th>
-                <th scope="col">Date</th>
-                <th scope="col">Modification</th>
-                <th scope="col">Demande</th>
-                <th scope="col">Décision</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="code" data-label="Version">3.1</td>
-                <td class="num" data-label="Date">11/2025</td>
-                <td data-label="Modification">Seuil de double validation abaissé de 10&#8239;000&nbsp;€ à 5&#8239;000&nbsp;€</td>
-                <td data-label="Demande"><span class="code">DM-2025-019</span> · Contrôle de gestion</td>
-                <td data-label="Décision"><span class="status status-ok">Approuvée</span> DAF</td>
-              </tr>
-              <tr>
-                <td class="code" data-label="Version">4.0</td>
-                <td class="num" data-label="Date">08/2026</td>
-                <td data-label="Modification">Réception des factures électroniques sur une plateforme agréée. Saisie manuelle limitée aux anomalies et aux factures hors réforme.</td>
-                <td data-label="Demande"><span class="code">DM-2026-011</span> · Responsable comptable</td>
-                <td data-label="Décision"><span class="status status-ok">Approuvée</span> Comité des processus</td>
-              </tr>
-              <tr>
-                <td class="code" data-label="Version">Aucune</td>
-                <td class="num" data-label="Date">09/2026</td>
-                <td data-label="Modification">Suppression du contrôle des doublons de paiement</td>
-                <td data-label="Demande"><span class="code">DM-2026-024</span> · Responsable comptable</td>
-                <td data-label="Décision"><span class="status status-no">Refusée</span> DAF, après AMDEC. Motif&nbsp;: risque non couvert</td>
-              </tr>
-              <tr>
-                <td class="code" data-label="Version">À attribuer</td>
-                <td class="num" data-label="Date">10/2026</td>
-                <td data-label="Modification">Extraction par IA des données des factures papier restantes, usage IA-011, niveau Encadré</td>
-                <td data-label="Demande"><span class="code">DM-2026-031</span> · Responsable comptable</td>
-                <td data-label="Décision"><span class="status status-wait">En évaluation</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="sheet-foot">Version majeure&nbsp;: le déroulé du processus change. Version mineure&nbsp;: un réglage à déroulé constant. Le numéro de version s’attribue à l’approbation.</p>
-        </figure>
-
-        <div class="config-row">
-          <figure class="sheet piece" id="piece-3">
-            <figcaption class="sheet-head">
-              <span class="sheet-title">Matrice RACI · PR-FIN-02, v3.1</span>
-              <span class="tag">Pièce 3 · Exemple</span>
-            </figcaption>
-            <div class="table-scroll">
-              <table class="t-raci">
-                <thead>
-                  <tr>
-                    <th scope="col">Activité</th>
-                    <th scope="col">Comptable fournisseurs</th>
-                    <th scope="col">Responsable comptable</th>
-                    <th scope="col">Acheteur</th>
-                    <th scope="col">DAF</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><th scope="row">Réception et contrôle de la facture</th><td>R</td><td class="raci-a">A</td><td></td><td></td></tr>
-                  <tr><th scope="row">Rapprochement commande, réception, facture</th><td>R</td><td class="raci-a">A</td><td>C</td><td></td></tr>
-                  <tr><th scope="row">Traitement des anomalies</th><td>R</td><td class="raci-a">A</td><td>C</td><td>I</td></tr>
-                  <tr><th scope="row">Validation au-delà de 5&#8239;000&nbsp;€</th><td>I</td><td>R</td><td>C</td><td class="raci-a">A</td></tr>
-                  <tr><th scope="row">Mise en paiement</th><td>I</td><td>R</td><td></td><td class="raci-a">A</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="sheet-foot">R réalise · A approuve · C consulté · I informé. Une seule lettre A par ligne.</p>
-          </figure>
-
-          <div class="gains">
-            <h3>Ce que cela apporte</h3>
-            <ul class="checklist checklist-single">
-              <li>Une seule version en vigueur par processus, connue de ceux qui l’appliquent.</li>
-              <li>Après un incident, l’historique donne la configuration en vigueur à la date des faits.</li>
-              <li>Un nouvel outil ou un nouvel usage de l’IA passe par une demande de modification, comme le reste.</li>
-              <li>L’audit compare la pratique à la configuration de référence et date chaque écart.</li>
-              <li>Le processus ne dépend plus de la mémoire d’une personne.</li>
-            </ul>
-            <p class="refs"><span>Références publiques</span>ISO&nbsp;10007 · SAE EIA-649C · ITIL, gestion des changements</p>
-          </div>
+          <p class="catalog-note"><span>Où vérifier</span>Normes ISO, IEC et EN&nbsp;: ISO, IEC, AFNOR. SAE EIA-649C&nbsp;: SAE International. BPMN&nbsp;: OMG. ITIL&nbsp;: PeopleCert. COSO&nbsp;: coso.org. Règlements européens&nbsp;: EUR-Lex, en version consolidée. Code du travail&nbsp;: Légifrance. ROME&nbsp;: France Travail. ESCO et DigComp&nbsp;: Commission européenne. Les normes sont citées sans année. L’édition applicable est celle en vigueur à la date de l’intervention.</p>
         </div>
       </div>
     </section>
 
     <!-- Analyse des postes -->
-    <section id="postes" class="section" aria-labelledby="postes-title">
+    <section id="postes" class="section band" aria-labelledby="postes-title">
       <div class="wrap postes-grid">
         <header class="section-head">
           <p class="eyebrow">Analyse des postes</p>
           <h2 id="postes-title">Une grille par poste, une ligne par tâche</h2>
           <p>La grille part de la fiche ROME du métier et du travail réel des titulaires, qui la relisent avant validation. Elle donne à chaque tâche un statut&nbsp;: automatisée, assistée, inchangée ou renforcée.</p>
-          <p>Elle sert ensuite à mettre à jour la fiche de poste et le plan de compétences. Une tâche qui change modifie le processus qui la porte. Cette modification suit le circuit de configuration. Quand le CSE doit être consulté sur une nouvelle technologie, la grille fournit la base du dossier (Code du travail, art.&nbsp;L2312-8).</p>
+          <p>Elle sert ensuite à mettre à jour la fiche de poste et le plan de développement des compétences. Une tâche qui change modifie le processus qui la porte. Cette modification suit le circuit de configuration. Quand le CSE doit être consulté sur une nouvelle technologie, la grille fournit la base du dossier (Code du travail, art.&nbsp;L2312-8).</p>
         </header>
 
         <figure class="sheet piece" id="piece-4">
           <figcaption class="sheet-head">
-            <span class="sheet-title">Grille d’analyse · Comptable fournisseurs (ROME M1203)</span>
-            <span class="tag">Pièce 4 · Exemple</span>
+            <span class="sheet-title" id="piece-4-title">Grille d’analyse · Comptable fournisseurs (ROME&nbsp;M1203)</span>
+            <span class="tag">Pièce&nbsp;4 · Exemple</span>
           </figcaption>
-          <table class="t-postes">
+          <table class="t-postes" aria-labelledby="piece-4-title">
             <thead>
               <tr>
                 <th scope="col">Tâche</th>
-                <th scope="col">Évolution</th>
+                <th scope="col">Statut</th>
                 <th scope="col">Ce qui change</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">Saisie des factures fournisseurs</th>
-                <td><span class="chip chip-auto">Automatisée</span></td>
-                <td>La facture électronique arrive structurée (EN&nbsp;16931). Restent les anomalies et les factures hors réforme.</td>
+                <td data-label="Statut"><span class="chip chip-auto">Automatisée</span></td>
+                <td data-label="Ce qui change">La facture électronique arrive structurée (EN&nbsp;16931). Restent les anomalies et les factures encore reçues sur papier.</td>
               </tr>
               <tr>
                 <th scope="row">Rapprochement commande, réception, facture</th>
-                <td><span class="chip chip-assist">Assistée</span></td>
-                <td>Le logiciel propose le rapprochement. Le titulaire valide les écarts.</td>
+                <td data-label="Statut"><span class="chip chip-assist">Assistée</span></td>
+                <td data-label="Ce qui change">Le logiciel propose le rapprochement. Le titulaire valide les écarts.</td>
               </tr>
               <tr>
-                <th scope="row">Factures papier restantes</th>
-                <td><span class="chip chip-assist">Assistée par l’IA · Encadré</span></td>
-                <td>Un outil extrait les données. Le titulaire contrôle chaque facture avant validation. Usage IA-011, en évaluation.</td>
+                <th scope="row">Factures reçues sur papier</th>
+                <td data-label="Statut"><span class="chip chip-assist">Assistée</span></td>
+                <td data-label="Ce qui change">Si la demande DM-2026-031 est approuvée, un outil d’IA extrait les données et le titulaire contrôle chaque facture. D’ici là, saisie manuelle.</td>
               </tr>
               <tr>
                 <th scope="row">Litiges fournisseurs</th>
-                <td><span class="chip chip-human">Inchangée</span></td>
-                <td>La négociation repose sur le contexte et sur le jugement.</td>
+                <td data-label="Statut"><span class="chip chip-human">Inchangée</span></td>
+                <td data-label="Ce qui change">La négociation repose sur le contexte et sur le jugement.</td>
               </tr>
               <tr>
                 <th scope="row">Contrôles avant paiement</th>
-                <td><span class="chip chip-up">Renforcée</span></td>
-                <td>Vérification de tout changement de coordonnées bancaires. Le temps gagné sur la saisie y passe.</td>
+                <td data-label="Statut"><span class="chip chip-up">Renforcée</span></td>
+                <td data-label="Ce qui change">Vérification de tout changement de coordonnées bancaires. Le temps gagné sur la saisie y passe.</td>
               </tr>
             </tbody>
           </table>
           <div class="sheet-foot sheet-foot-lines">
             <p><span>Compétences à développer</span>Traitement des anomalies de flux, contrôle des données extraites par l’IA, détection des fraudes au changement de coordonnées bancaires.</p>
-            <p><span>Processus de rattachement</span>PR-FIN-02, version 4.0 (pièce&nbsp;2).</p>
+            <p><span>Processus de rattachement</span>PR-FIN-02, version&nbsp;4.0 (pièce&nbsp;1).</p>
           </div>
         </figure>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section band" aria-labelledby="contact-title">
+    <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="wrap contact-grid">
         <div class="contact-intro">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Nommez le processus.</h2>
-          <p>Quelques lignes suffisent&nbsp;: le processus, le poste ou l’usage de l’IA concerné, et ce qui pose question. La réponse indique les briques utiles, ou qu’aucune ne l’est. Vous choisissez.</p>
+          <h2 id="contact-title">Nommez le processus</h2>
+          <p>Quelques lignes suffisent&nbsp;: le processus, le poste ou l’outil concerné, et ce qui pose question. La réponse indique les briques utiles, ou qu’aucune ne l’est. Vous choisissez.</p>
           <dl class="contact-details">
             <div>
               <dt>E-mail</dt>
               <dd>
                 <span id="contact-email" class="contact-email">contact@sjpmp.fr</span>
-                <button type="button" class="copy-btn" data-copy-target="contact-email">Copier</button>
+                <button type="button" class="copy-btn" data-copy-target="contact-email" aria-live="polite">Copier</button>
               </dd>
             </div>
           </dl>
@@ -662,7 +576,7 @@
             <input id="f-nom" name="nom" type="text" autocomplete="name" required>
           </div>
           <div class="field">
-            <label for="f-entreprise">Entreprise</label>
+            <label for="f-entreprise">Entreprise (facultatif)</label>
             <input id="f-entreprise" name="entreprise" type="text" autocomplete="organization">
           </div>
           <div class="field field-full">
@@ -672,23 +586,24 @@
           <div class="field field-full">
             <label for="f-sujet">Domaine concerné</label>
             <select id="f-sujet" name="sujet">
-              <option>Recours à l’IA</option>
+              <option>Socle PLM</option>
               <option>Processus gérés en configuration</option>
               <option>Analyse des postes</option>
               <option>Nouvelles pratiques numériques</option>
               <option>Conseil en entreprise</option>
+              <option>Recours à l’IA</option>
               <option>Plusieurs domaines</option>
             </select>
           </div>
           <div class="field field-full">
             <label for="f-message">Le cas, en quelques lignes</label>
-            <textarea id="f-message" name="message" rows="5" required placeholder="Exemple&nbsp;: validation des factures fournisseurs, quatre personnes, un outil d’IA utilisé sans règle écrite."></textarea>
+            <textarea id="f-message" name="message" rows="5" required placeholder="Exemple&nbsp;: validation des factures fournisseurs, quatre personnes, une procédure qui ne correspond plus à la pratique."></textarea>
           </div>
           <div class="form-actions field-full">
             <button class="btn" type="submit">Préparer l’e-mail</button>
             <p class="form-note">Votre messagerie s’ouvre avec le message prérempli. Rien ne part sans vous.</p>
           </div>
-          <p id="form-status" class="form-status field-full" role="status" hidden></p>
+          <p id="form-status" class="form-status field-full" role="status"></p>
         </form>
       </div>
     </section>
@@ -698,19 +613,19 @@
     <div class="wrap footer-inner">
       <div class="footer-brand">
         <span class="brand-name">SJPMP</span>
-        <p>Conseil en entreprise. Briques d’analyse pour les processus, les postes, les pratiques numériques et le recours à l’IA.</p>
+        <p>Conseil en entreprise. Briques d’analyse des processus et socle PLM pour gérer l’organisation en configuration.</p>
       </div>
       <nav aria-label="Pied de page">
         <ul>
+          <li><a href="#socle">Le socle</a></li>
+          <li><a href="#quotidien">Au quotidien</a></li>
           <li><a href="#domaines">Domaines</a></li>
           <li><a href="#briques">Briques</a></li>
-          <li><a href="#ia">IA</a></li>
-          <li><a href="#configuration">Configuration</a></li>
           <li><a href="#postes">Postes</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <p class="footer-legal">© <span id="year">2026</span> SJPMP <em>(si je peux me permettre)</em></p>
+      <p class="footer-legal">©&nbsp;<span id="year">2026</span> SJPMP (<em>si je peux me permettre</em>)</p>
     </div>
   </footer>
 
