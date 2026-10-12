@@ -281,6 +281,29 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (!running) draw(); });
   }
 
+  /* ---------- Catalogue des briques : filtre par type ---------- */
+  document.querySelectorAll("[data-catalog]").forEach(function (catalog) {
+    var buttons = catalog.querySelectorAll("[data-filter]");
+    var rows = catalog.querySelectorAll("[data-type]");
+    var count = catalog.querySelector("[data-catalog-count]");
+    var apply = function (filter) {
+      var shown = 0;
+      rows.forEach(function (row) {
+        var match = filter === "tout" || row.getAttribute("data-type") === filter;
+        row.hidden = !match;
+        if (match) shown++;
+      });
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === filter));
+      });
+      if (count) count.textContent = shown + (shown > 1 ? " briques" : " brique");
+    };
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () { apply(b.getAttribute("data-filter")); });
+    });
+    apply("tout");
+  });
+
   /* ---------- Copier l'adresse e-mail ---------- */
   document.querySelectorAll("[data-copy-target]").forEach(function (button) {
     button.addEventListener("click", function () {
