@@ -30,9 +30,9 @@
   if (year) year.textContent = String(new Date().getFullYear());
 
   /* ---------- Schéma « écluse » ----------
-     Des usages dispersés de l'IA convergent vers la charte (la porte), puis
-     suivent l'un des quatre couloirs : libre, encadré, supervisé (pause pour
-     validation humaine) ou proscrit (arrêt à la barrière). */
+     Des usages de l'IA non recensés convergent vers le classement (la porte),
+     puis suivent l'un des quatre couloirs : libre, encadré, supervisé (pause
+     pour décision humaine) ou interdit (arrêt à la barrière). */
   var canvas = document.getElementById("flow-canvas");
   if (canvas && canvas.getContext) initFlow(canvas);
 
@@ -43,7 +43,7 @@
       { label: "LIBRE", weight: 0.4, token: "--lane-libre" },
       { label: "ENCADRÉ", weight: 0.3, token: "--lane-encadre" },
       { label: "SUPERVISÉ", weight: 0.2, token: "--lane-supervise" },
-      { label: "PROSCRIT", weight: 0.1, token: "--lane-proscrit" }
+      { label: "INTERDIT", weight: 0.1, token: "--lane-proscrit" }
     ];
     var TAU = Math.PI * 2;
     var W = 0, H = 0, geo = null, colors = null;
@@ -204,9 +204,9 @@
       ctx.textBaseline = "alphabetic";
       ctx.fillStyle = c.soft;
       ctx.textAlign = "left";
-      ctx.fillText(g.compact ? "USAGES" : "USAGES SPONTANÉS", 0, 12);
+      ctx.fillText(g.compact ? "USAGES" : "USAGES NON RECENSÉS", 0, 12);
       ctx.textAlign = "center";
-      ctx.fillText("CHARTE IA", g.gateX, 12);
+      ctx.fillText("CLASSEMENT", g.gateX, 12);
       ctx.textAlign = "right";
       for (i = 0; i < LANES.length; i++) {
         var top = g.top + g.laneH * i;
@@ -347,15 +347,15 @@
         String(data.get("message") || "").trim(),
         "",
         "—",
-        "Nom : " + String(data.get("nom") || "").trim(),
-        "Entreprise : " + String(data.get("entreprise") || "").trim(),
-        "E-mail : " + String(data.get("email") || "").trim()
+        "Nom\u00A0: " + String(data.get("nom") || "").trim(),
+        "Entreprise\u00A0: " + String(data.get("entreprise") || "").trim(),
+        "E-mail\u00A0: " + String(data.get("email") || "").trim()
       ].join("\n");
       var url = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
       if (status) {
         status.hidden = false;
-        status.textContent = "Votre messagerie devrait s'ouvrir avec le message prérempli. Si rien ne s'ouvre, écrivez-nous directement à " + to + ".";
+        status.textContent = "Votre messagerie devrait s’ouvrir avec le message prérempli. Sinon, écrivez directement à " + to + ".";
       }
       try { window.location.href = url; } catch (err) { /* le message ci-dessus reste affiché */ }
     });

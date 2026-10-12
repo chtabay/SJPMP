@@ -1,6 +1,6 @@
 # SJPMP
 
-Site vitrine du cabinet de conseil SJPMP : conseil en entreprise, transition vers les nouvelles pratiques numériques, analyse des postes face à l'évolution des technologies, contrôle et conformité des processus, canalisation du recours à l'IA.
+Site vitrine du cabinet de conseil SJPMP : briques d'analyse des processus (méthodes, processus, outils) pour le conseil en entreprise, les nouvelles pratiques numériques, l'analyse des postes face à l'évolution des technologies, les processus gérés en configuration et la canalisation du recours à l'IA.
 
 Site statique, sans dépendance ni étape de compilation.
 
@@ -9,7 +9,7 @@ Site statique, sans dépendance ni étape de compilation.
 ```
 index.html              Page unique (toutes les sections)
 assets/css/styles.css   Styles, thèmes clair et sombre
-assets/js/main.js       Menu mobile, schéma animé « écluse », formulaire de contact
+assets/js/main.js       Menu mobile, schéma animé, filtre du catalogue, formulaire de contact
 assets/img/favicon.svg  Icône du site
 ```
 
